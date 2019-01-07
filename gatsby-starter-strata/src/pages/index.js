@@ -24,43 +24,46 @@ const DEFAULT_IMAGES = [
     id: '1',
     src: full01,
     thumbnail: thumb01,
-    caption: 'Photo 1',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'Proofd',
+    description: 'A blockchain enabled verification platform',
   },
   {
     id: '2',
     src: full02,
     thumbnail: thumb02,
-    caption: 'Photo 2',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'CryptoGym',
+    description: 'An interactive training center for blockchain technology',
   },
   {
     id: '3',
     src: full03,
     thumbnail: thumb03,
-    caption: 'Photo 3',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'Professor Jones Music',
+    description: 'A full responsive, modern artist website',
   },
   {
     id: '4',
     src: full04,
     thumbnail: thumb04,
-    caption: 'Photo 4',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'BC/AD — Block Chain Artifact Database',
+    description:
+      'A system for authenticating unique artifacts, antiques & collectibles verified by experts',
   },
   {
     id: '5',
     src: full05,
     thumbnail: thumb05,
-    caption: 'Photo 5',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'React Movies',
+    description:
+      'A UI-focused app with real-time search that displays details & trailers of films',
   },
   {
     id: '6',
     src: full06,
     thumbnail: thumb06,
-    caption: 'Photo 6',
-    description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.',
+    caption: 'WalletWatcher',
+    description:
+      'An app that allows users to monitor ETH address & receive SMS notifications on go (3rd place hackathon winner)',
   },
 ]
 
@@ -162,7 +165,11 @@ class HomeIndex extends React.Component {
 
             <ul className="actions">
               <li>
-                <a href="#" className="button">
+                <a
+                  href="https://www.thehackhive.com/profile/jeremyjones"
+                  target="_blank"
+                  className="button"
+                >
                   Full Portfolio
                 </a>
               </li>
@@ -177,41 +184,6 @@ class HomeIndex extends React.Component {
               lorem vulputate lorem neque lorem ipsum dolor.
             </p>
             <div className="row">
-              <div className="8u 12u$(small)">
-                <form method="post" action="#">
-                  <div className="row uniform 50%">
-                    <div className="6u 12u$(xsmall)">
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        placeholder="Name"
-                      />
-                    </div>
-                    <div className="6u 12u$(xsmall)">
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                    <div className="12u">
-                      <textarea
-                        name="message"
-                        id="message"
-                        placeholder="Message"
-                        rows="4"
-                      />
-                    </div>
-                  </div>
-                </form>
-                <ul className="actions">
-                  <li>
-                    <input type="submit" value="Send Message" />
-                  </li>
-                </ul>
-              </div>
               <div className="4u 12u$(small)">
                 <ul className="labeled-icons">
                   <li>
