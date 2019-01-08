@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
@@ -12,46 +11,47 @@ import thumb04 from '../assets/images/thumbs/04.jpg'
 import thumb05 from '../assets/images/thumbs/05.jpg'
 import thumb06 from '../assets/images/thumbs/06.jpg'
 
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
-import full04 from '../assets/images/fulls/04.jpg'
-import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
+const url01 = 'https://proofd.app/'
+const url02 = 'https://cryptogym.netlify.com/'
+const url03 = 'https://professorjonesmusic.com/'
+const url04 =
+  'https://devpost.com/software/b-c-a-d-boock-chain-artifact-database/'
+const url05 = 'https://react-movies-jeremy-jones.netlify.com/'
+const url06 = 'https://walletwatcher.netlify.com/'
 
 const DEFAULT_IMAGES = [
   {
     id: '1',
-    src: full01,
+    src: url01,
     thumbnail: thumb01,
     caption: 'Proofd',
     description: 'A blockchain enabled verification platform',
   },
   {
     id: '2',
-    src: full02,
+    src: url02,
     thumbnail: thumb02,
     caption: 'CryptoGym',
     description: 'An interactive training center for blockchain technology',
   },
   {
     id: '3',
-    src: full03,
+    src: url03,
     thumbnail: thumb03,
     caption: 'Professor Jones Music',
     description: 'A full responsive, modern artist website',
   },
   {
     id: '4',
-    src: full04,
+    src: url04,
     thumbnail: thumb04,
     caption: 'BC/AD — Block Chain Artifact Database',
     description:
-      'A system for authenticating unique artifacts, antiques & collectibles verified by experts',
+      'A system for authenticating unique artifacts, antiques & collectibles verified by experts (ETH SF hackathon project)',
   },
   {
     id: '5',
-    src: full05,
+    src: url05,
     thumbnail: thumb05,
     caption: 'React Movies',
     description:
@@ -59,7 +59,7 @@ const DEFAULT_IMAGES = [
   },
   {
     id: '6',
-    src: full06,
+    src: url06,
     thumbnail: thumb06,
     caption: 'WalletWatcher',
     description:
@@ -113,8 +113,9 @@ class HomeIndex extends React.Component {
   }
 
   render() {
-    const siteTitle = 'Gatsby Starter - Strata'
-    const siteDescription = 'Site description'
+    const siteTitle = 'Jeremy A. Jones'
+    const siteDescription =
+      'Jeremy A. Jones is a full stack developer in San Francisco, CA'
 
     return (
       <Layout>
