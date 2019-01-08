@@ -26,6 +26,7 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb01,
     caption: 'Proofd',
     description: 'A blockchain enabled verification platform',
+    tech: 'React, Redux, Node.js, Express, PostgresSQL',
   },
   {
     id: '2',
@@ -33,6 +34,7 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb02,
     caption: 'CryptoGym',
     description: 'An interactive training center for blockchain technology',
+    tech: 'React, Redux, Node.js, Express',
   },
   {
     id: '3',
@@ -40,6 +42,7 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb03,
     caption: 'Professor Jones Music',
     description: 'A full responsive, modern artist website',
+    tech: 'React, Express, Node.js',
   },
   {
     id: '4',
@@ -48,6 +51,7 @@ const DEFAULT_IMAGES = [
     caption: 'BC/AD — Block Chain Artifact Database',
     description:
       'A system for authenticating unique artifacts, antiques & collectibles verified by experts (ETH SF hackathon project)',
+    tech: 'React, CSS, Node.js, Express, Web3.js, Solidity',
   },
   {
     id: '5',
@@ -56,6 +60,7 @@ const DEFAULT_IMAGES = [
     caption: 'React Movies',
     description:
       'A UI-focused app with real-time search that displays details & trailers of films',
+    tech: 'React',
   },
   {
     id: '6',
@@ -64,6 +69,7 @@ const DEFAULT_IMAGES = [
     caption: 'WalletWatcher',
     description:
       'An app that allows users to monitor ETH address & receive SMS notifications on go (3rd place hackathon winner)',
+    tech: 'React, Express, Node.js, MongoDB',
   },
 ]
 
@@ -111,11 +117,12 @@ class HomeIndex extends React.Component {
 
             <Gallery
               images={DEFAULT_IMAGES.map(
-                ({ id, src, thumbnail, caption, description }) => ({
+                ({ id, src, thumbnail, caption, description, tech }) => ({
                   src,
                   thumbnail,
                   caption,
                   description,
+                  tech,
                 })
               )}
             />

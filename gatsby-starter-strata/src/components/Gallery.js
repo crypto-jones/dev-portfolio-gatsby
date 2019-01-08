@@ -15,7 +15,10 @@ class Gallery extends Component {
           </a>
 
           <h3>{obj.caption}</h3>
-          <p>{obj.description}</p>
+          <p>
+            <strong>{obj.description}</strong>
+          </p>
+          <p>{obj.tech}</p>
         </article>
       )
     })
