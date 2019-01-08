@@ -118,7 +118,7 @@ h6 {
   color: _palette(fg-bold);
   font-weight: _font(weight-bold);
   line-height: 1em;
-  margin: 0 0 (_size(element-margin) * 0.5) 0;
+  margin: 0;
 
   a {
     color: inherit;
@@ -127,7 +127,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.5em;
 }
 
@@ -962,6 +962,7 @@ input[type='button'],
   > .inner {
     @include vendor('flex-grow', '1');
     margin: 0 0 ($size-header-pad * 0.5) 0;
+    display: block;
   }
 
   strong,
@@ -977,7 +978,11 @@ input[type='button'],
     color: _palette(accent2, fg-bold);
   }
 
-  h1 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     color: _palette(accent2, fg);
     font-size: 1.35em;
     line-height: 1.75em;
@@ -986,7 +991,7 @@ input[type='button'],
 
   .image.avatar {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
-    width: 6.25em;
+    width: 200px;
   }
 }
 
@@ -1259,7 +1264,7 @@ body.is-touch {
     width: $size-header-width;
 
     h1 {
-      font-size: 1.25em;
+      font-size: 1.8em;
 
       br {
         display: none;
